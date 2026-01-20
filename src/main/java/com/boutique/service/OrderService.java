@@ -62,7 +62,7 @@ public class OrderService {
         Orders order = orderrepository.findById(orderId)
                 .orElseThrow(() -> new ResourceNotFoundException("Order not found"));
 
-        // 🔁 Idempotent check
+         
         if (order.getStatus() == OrderStatus.PAID) {
             return new PaymentResponse("Payment already done", order);
         }
