@@ -1,0 +1,68 @@
+.clients-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.client-form, .clients-list {
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.client-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.client-form input, .client-form select, .client-form button {
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.client-form button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.client-form button:hover {
+  background-color: #084298;
+}
+
+/* Clients Table */
+.clients-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clients-table th,
+.clients-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.clients-table th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.clients-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.clients-table tr:hover {
+  background-color: #ddd;
+}
+
+.clients-table button {
+  margin-right: 5px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}
